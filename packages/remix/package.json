@@ -59,8 +59,6 @@
     "./job-data-table": "./src/job-data-table.ts",
     "./job-redis": "./src/job-redis.ts",
     "./job/backend": "./src/job/backend.ts",
-    "./job/data-table": "./src/job/data-table.ts",
-    "./job/redis": "./src/job/redis.ts",
     "./job/worker": "./src/job/worker.ts",
     "./lazy-file": "./src/lazy-file.ts",
     "./logger-middleware": "./src/logger-middleware.ts",
@@ -251,14 +249,6 @@
       "./job/backend": {
         "types": "./dist/job/backend.d.ts",
         "default": "./dist/job/backend.js"
-      },
-      "./job/data-table": {
-        "types": "./dist/job/data-table.d.ts",
-        "default": "./dist/job/data-table.js"
-      },
-      "./job/redis": {
-        "types": "./dist/job/redis.d.ts",
-        "default": "./dist/job/redis.js"
       },
       "./job/worker": {
         "types": "./dist/job/worker.d.ts",
