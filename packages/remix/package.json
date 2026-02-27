@@ -55,6 +55,13 @@
     "./interaction/keys": "./src/interaction/keys.ts",
     "./interaction/popover": "./src/interaction/popover.ts",
     "./interaction/press": "./src/interaction/press.ts",
+    "./job": "./src/job.ts",
+    "./job-data-table": "./src/job-data-table.ts",
+    "./job-redis": "./src/job-redis.ts",
+    "./job/backend": "./src/job/backend.ts",
+    "./job/data-table": "./src/job/data-table.ts",
+    "./job/redis": "./src/job/redis.ts",
+    "./job/worker": "./src/job/worker.ts",
     "./lazy-file": "./src/lazy-file.ts",
     "./logger-middleware": "./src/logger-middleware.ts",
     "./method-override-middleware": "./src/method-override-middleware.ts",
@@ -229,6 +236,34 @@
         "types": "./dist/interaction/press.d.ts",
         "default": "./dist/interaction/press.js"
       },
+      "./job": {
+        "types": "./dist/job.d.ts",
+        "default": "./dist/job.js"
+      },
+      "./job-data-table": {
+        "types": "./dist/job-data-table.d.ts",
+        "default": "./dist/job-data-table.js"
+      },
+      "./job-redis": {
+        "types": "./dist/job-redis.d.ts",
+        "default": "./dist/job-redis.js"
+      },
+      "./job/backend": {
+        "types": "./dist/job/backend.d.ts",
+        "default": "./dist/job/backend.js"
+      },
+      "./job/data-table": {
+        "types": "./dist/job/data-table.d.ts",
+        "default": "./dist/job/data-table.js"
+      },
+      "./job/redis": {
+        "types": "./dist/job/redis.d.ts",
+        "default": "./dist/job/redis.js"
+      },
+      "./job/worker": {
+        "types": "./dist/job/worker.d.ts",
+        "default": "./dist/job/worker.js"
+      },
       "./lazy-file": {
         "types": "./dist/lazy-file.d.ts",
         "default": "./dist/lazy-file.js"
@@ -355,6 +390,9 @@
     "@remix-run/data-table-mysql": "workspace:^",
     "@remix-run/data-table-postgres": "workspace:^",
     "@remix-run/data-table-sqlite": "workspace:^",
+    "@remix-run/job": "workspace:^",
+    "@remix-run/job-data-table": "workspace:^",
+    "@remix-run/job-redis": "workspace:^",
     "@remix-run/session-storage-memcache": "workspace:^",
     "@remix-run/session-storage-redis": "workspace:^",
     "@remix-run/file-storage-s3": "workspace:^"
