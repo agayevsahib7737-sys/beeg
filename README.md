@@ -39,6 +39,7 @@ We currently publish the following packages:
 - [async-context-middleware](packages/async-context-middleware): Middleware for storing request context in AsyncLocalStorage
 - [component](packages/component): A minimal component system that leans on JavaScript and DOM primitives
 - [compression-middleware](packages/compression-middleware): Middleware for compressing HTTP responses
+- [csrf-middleware](packages/csrf-middleware): Middleware for CSRF protection in Fetch API servers
 - [cookie](packages/cookie): A toolkit for working with cookies in JavaScript
 - [fetch-proxy](packages/fetch-proxy): An HTTP proxy for the web Fetch API
 - [fetch-router](packages/fetch-router): A minimal, composable router for the web Fetch API
