@@ -59,6 +59,7 @@
     "./job-data-table": "./src/job-data-table.ts",
     "./job-redis": "./src/job-redis.ts",
     "./job/backend": "./src/job/backend.ts",
+    "./job/storage": "./src/job/storage.ts",
     "./job/worker": "./src/job/worker.ts",
     "./lazy-file": "./src/lazy-file.ts",
     "./logger-middleware": "./src/logger-middleware.ts",
@@ -249,6 +250,10 @@
       "./job/backend": {
         "types": "./dist/job/backend.d.ts",
         "default": "./dist/job/backend.js"
+      },
+      "./job/storage": {
+        "types": "./dist/job/storage.d.ts",
+        "default": "./dist/job/storage.js"
       },
       "./job/worker": {
         "types": "./dist/job/worker.d.ts",
