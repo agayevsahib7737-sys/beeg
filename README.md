@@ -55,6 +55,9 @@ We currently publish the following packages:
 - [headers](packages/headers): A toolkit for working with HTTP headers in JavaScript
 - [html-template](packages/html-template): HTML template tag with auto-escaping for JavaScript
 - [interaction](packages/interaction): Like components but for events
+- [job](packages/job): Background job scheduling for Remix
+- [job-data-table](packages/job-data-table): SQL storage for remix/job
+- [job-redis](packages/job-redis): Redis storage for remix/job
 - [lazy-file](packages/lazy-file): Lazy, streaming files for JavaScript
 - [logger-middleware](packages/logger-middleware): Middleware for logging HTTP requests and responses
 - [method-override-middleware](packages/method-override-middleware): Middleware for overriding HTTP request methods from form data
