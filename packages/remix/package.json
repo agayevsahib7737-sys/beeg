@@ -59,6 +59,7 @@
     "./job-data-table": "./src/job-data-table.ts",
     "./job-redis": "./src/job-redis.ts",
     "./job/storage": "./src/job/storage.ts",
+    "./job/worker": "./src/job/worker.ts",
     "./lazy-file": "./src/lazy-file.ts",
     "./logger-middleware": "./src/logger-middleware.ts",
     "./method-override-middleware": "./src/method-override-middleware.ts",
@@ -248,6 +249,10 @@
       "./job/storage": {
         "types": "./dist/job/storage.d.ts",
         "default": "./dist/job/storage.js"
+      },
+      "./job/worker": {
+        "types": "./dist/job/worker.d.ts",
+        "default": "./dist/job/worker.js"
       },
       "./lazy-file": {
         "types": "./dist/lazy-file.d.ts",
