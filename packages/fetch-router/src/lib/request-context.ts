@@ -35,6 +35,8 @@ export type ContextValue<key> =
  */
 export class RequestContext<params extends Record<string, any> = {}> {
   /**
+   * Create a new request context for the given request.
+   *
    * @param request The incoming request
    */
   constructor(request: Request) {

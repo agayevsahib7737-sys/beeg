@@ -123,7 +123,7 @@ type BuildResourcesMap<base extends string, options extends ResourcesOptions> = 
 >
 
 // prettier-ignore
-type BuildResourcesRoutes<
+export type BuildResourcesRoutes<
   options extends ResourcesOptions,
   method extends ResourcesMethod,
   param extends string,
@@ -131,7 +131,7 @@ type BuildResourcesRoutes<
   [methodName in method as GetResourcesRouteName<options, methodName>]: ResourcesRoutes<param>[methodName]
 }
 
-type GetResourcesRouteName<
+export type GetResourcesRouteName<
   options extends ResourcesOptions,
   method extends ResourcesMethod,
 > = method extends ResourcesMethod
@@ -140,7 +140,7 @@ type GetResourcesRouteName<
     : method
   : never
 
-type ResourcesRoutes<param extends string> = {
+export type ResourcesRoutes<param extends string> = {
   index: { method: 'GET'; pattern: `/` }
   new: { method: 'GET'; pattern: `/new` }
   show: { method: 'GET'; pattern: `/:${param}` }
@@ -151,5 +151,5 @@ type ResourcesRoutes<param extends string> = {
 }
 
 // prettier-ignore
-type GetParam<options extends ResourcesOptions> =
+export type GetParam<options extends ResourcesOptions> =
   options extends { param: infer param extends string } ? param : 'id'

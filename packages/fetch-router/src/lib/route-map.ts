@@ -29,6 +29,8 @@ export class Route<
   readonly pattern: RoutePattern<pattern>
 
   /**
+   * Create a new route with the given method and pattern.
+   *
    * @param method The HTTP method this route matches
    * @param pattern The pattern this route matches
    */
@@ -128,7 +130,7 @@ export type BuildRouteMap<base extends string, defs extends RouteDefs> = Simplif
 }>
 
 // prettier-ignore
-type BuildRouteWithBase<base extends string, def extends RouteDef> =
+export type BuildRouteWithBase<base extends string, def extends RouteDef> =
   def extends string ? Route<'ANY', Join<base, def>> :
   def extends RoutePattern<infer pattern extends string> ? Route<'ANY', Join<base, pattern>> :
   def extends { method: infer method extends RequestMethod | 'ANY', pattern: infer pattern } ? (

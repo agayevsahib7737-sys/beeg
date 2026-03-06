@@ -11,7 +11,7 @@ export type Controller<routes extends RouteMap> = {
 }
 
 // prettier-ignore
-type ControllerActions<routes extends RouteMap> = routes extends any ?
+export type ControllerActions<routes extends RouteMap> = routes extends any ?
   {
     [name in keyof routes]: (
       routes[name] extends Route<infer method extends RequestMethod | 'ANY', infer pattern extends string> ? Action<method, pattern> :
@@ -28,7 +28,7 @@ export type Action<method extends RequestMethod | 'ANY', pattern extends string>
   | RequestHandlerWithMiddleware<method, Params<pattern>>
   | RequestHandler<method, Params<pattern>>
 
-type RequestHandlerWithMiddleware<
+export type RequestHandlerWithMiddleware<
   method extends RequestMethod | 'ANY',
   params extends Record<string, any>,
 > = {

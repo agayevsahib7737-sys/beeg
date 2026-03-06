@@ -109,11 +109,11 @@ type BuildResourceMap<base extends string, options extends ResourceOptions> = Bu
   >
 >
 
-type BuildResourceRoutes<options extends ResourceOptions, method extends ResourceMethod> = {
+export type BuildResourceRoutes<options extends ResourceOptions, method extends ResourceMethod> = {
   [methodName in method as GetRouteName<options, methodName>]: ResourceRoutes[methodName]
 }
 
-type GetRouteName<
+export type GetRouteName<
   options extends ResourceOptions,
   method extends ResourceMethod,
 > = method extends ResourceMethod
@@ -122,7 +122,7 @@ type GetRouteName<
     : method
   : never
 
-type ResourceRoutes = {
+export type ResourceRoutes = {
   new: { method: 'GET'; pattern: `/new` }
   show: { method: 'GET'; pattern: `/` }
   create: { method: 'POST'; pattern: `/` }
